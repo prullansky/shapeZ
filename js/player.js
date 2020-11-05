@@ -51,7 +51,7 @@ class Player {
     }
 
     increasePoints(){
-        this.points += 1;
+        this.points += 100;
     }
 }
 

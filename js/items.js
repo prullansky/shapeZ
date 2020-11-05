@@ -4,6 +4,7 @@ class Item {
         this.y = 275;
         this.height = 20;
         this.width = 20;
+        this.image = itemImage; 
     }
 
     collision(playerInfo) {
@@ -16,6 +17,7 @@ class Item {
             return false;
         } else {
             game.player.increasePoints();
+            
             this.x = Math.floor(Math.random()*850);
             this.y = Math.floor(Math.random()*500);
             game.barrierArray.push(new Barrier(),new Barrier());
@@ -25,8 +27,9 @@ class Item {
     }
 
     drawItem(){
-        this.collision(game.player);      
-        square(this.x, this.y, this.width);
+        this.collision(game.player);
+        image(this.image,this.x,this.y);
+        // square(this.x, this.y, this.width);
     }
 
 

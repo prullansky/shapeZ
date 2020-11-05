@@ -13,8 +13,8 @@ class Barrier {
 
 
     collision(playerInfo) {
-        let obstacleX = this.x + this.width / 2;
-        let obstacleY = this.y + this.height / 2;
+        let obstacleX = this.x + this.width / 3;
+        let obstacleY = this.y + this.height / 3;
         let playerX = playerInfo.x + playerInfo.width / 2;
         let playerY = playerInfo.y + playerInfo.height / 2;
 
@@ -22,6 +22,7 @@ class Barrier {
             return false;
         } else {
             game.player.increaseScore();
+            song.stop();
             noLoop();
             return true;
         }

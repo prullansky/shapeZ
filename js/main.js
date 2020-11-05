@@ -1,10 +1,11 @@
 const game = new Game();
 let bg;
-let song;
+// let song;
 
 
 function preload() {
   game.preloadGame();
+  song = loadSound('assets/ost.mp3');
 }
 
 function setup() {
