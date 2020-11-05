@@ -1,6 +1,6 @@
 class Player {
-    constructor(playerImage){
-        this.image = playerImage;
+    constructor(){
+        // this.image = playerImage;
         this.x = 450;
         this.y = 10;
         this.height = 25;
@@ -10,7 +10,8 @@ class Player {
     }
 
     drawPlayer(){
-        image(this.image,this.x,this.y);
+        // image(this.image,this.x,this.y);
+        square(this.x, this.y, 25)
     }
 
     moveUp(){

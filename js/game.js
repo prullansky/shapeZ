@@ -2,14 +2,14 @@ class Game {
     constructor() {}
     preloadGame() {
 
-        this.playerImage = loadImage("../assets/player.png");
+        // this.playerImage = loadImage("../assets/player.png");
         // this.itemImage = loadImage("../assets/item1.png");
         // this.barrierImage = loadImage("../assets/barriertest.png")
       }
     
       setupGame() {
 
-        this.player = new Player(this.playerImage);
+        this.player = new Player();
         this.item = new Item(this.itemImage);    
         this.barrierArray = [];        
       }
