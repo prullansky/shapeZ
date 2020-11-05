@@ -8,7 +8,7 @@ function preload() {
 }
 
 function setup() {
-  bg = loadImage('../assets/black-background.png')
+  bg = loadImage('assets/black-background.png')
   createCanvas(900, 550);
   game.setupGame();
 }
