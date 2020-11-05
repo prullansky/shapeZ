@@ -2,7 +2,7 @@ class Game {
     constructor() {}
     preloadGame() {
 
-        this.playerImage = loadImage("/assets/player.png");
+        this.playerImage = loadImage("../assets/player.png");
         // this.itemImage = loadImage("../assets/item1.png");
         // this.barrierImage = loadImage("../assets/barriertest.png")
       }
