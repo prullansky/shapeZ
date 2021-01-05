@@ -22,7 +22,7 @@ class Item {
             this.x = Math.floor(Math.random()*850);
             this.y = Math.floor(Math.random()*500);
             game.barrierArray.push(new Barrier(),new Barrier());
-            console.log(this.x, this.y)
+            game.powerUpArray.push(new PowerUp());
             return true;
         }
     }
@@ -34,11 +34,29 @@ class Item {
     }
 }
 
-// class PowerUp extends Item {
+// class PowerUp {
+
 //     constructor(powerUpImage){
 //         this.x = Math.floor(Math.random()*width);
 //         this.y = Math.floor(Math.random()*height);
+//         // this.x = 500;
+//         // this.y = 300;
+//         this.height = 20;
+//         this.width = 20;
 //         this.image = powerUpImage;
-//         super (this.height, this.width) 
 //     }
+
+//     drawPowerUp(){
+//         if(game.item.collision(game.player)) {
+//             image(this.image,this.x,this.y);
+//             return true;
+//         } else {
+//             return false;
+//         }
+            
+
+        
+//        // square(this.x, this.y, this.width);
+//     }
+
 // }

@@ -14,6 +14,7 @@ class Barrier {
     drawBarrier(){
         ellipse(this.x, this.y, this.height, this.width)
         // image(this.image,this.x,this.y);
+
     }
 
     collision(playerInfo) {
