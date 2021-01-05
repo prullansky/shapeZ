@@ -4,13 +4,15 @@ class Game {
 
         // this.playerImage = loadImage("../assets/player.png");
         this.itemImage = loadImage("assets/item1.png");
+        // this.powerUpImage = loadImage("assets/powerUp")
         // this.barrierImage = loadImage("../assets/barriertest.png")
       }
     
       setupGame() {
         song.play();
         this.player = new Player();
-        this.item = new Item(this.itemImage);    
+        this.item = new Item(this.itemImage); 
+        // this.powerUp = new PowerUp(this.powerUpImage); 
         this.barrierArray = [];        
       }
 
@@ -28,7 +30,6 @@ class Game {
           })
 
           for (let i =0; i - this.barrierArray.length; i++) {
-            console.log(this.barrierArray[i].speed);
              if (this.barrierArray.length > 10) {
               this.barrierArray[i].speed = 1.5;
             } else if (this.barrierArray.length > 22) {

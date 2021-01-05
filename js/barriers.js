@@ -11,6 +11,10 @@ class Barrier {
         this.image = barrierImage;
     }
 
+    drawBarrier(){
+        ellipse(this.x, this.y, this.height, this.width)
+        // image(this.image,this.x,this.y);
+    }
 
     collision(playerInfo) {
         let obstacleX = this.x + this.width / 3;
@@ -26,11 +30,6 @@ class Barrier {
             noLoop();
             return true;
         }
-    }
-
-    drawBarrier(){
-        ellipse(this.x, this.y, this.height, this.width)
-        // image(this.image,this.x,this.y);
     }
 
     motion(){

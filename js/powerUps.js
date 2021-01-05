@@ -1,6 +1,5 @@
-class Item {
-    
-    constructor(itemImage){
+class PowerUp {
+    constructor(PowerUpImage){
         this.x = 450;
         this.y = 275;
         this.height = 20;
@@ -22,7 +21,6 @@ class Item {
             this.x = Math.floor(Math.random()*850);
             this.y = Math.floor(Math.random()*500);
             game.barrierArray.push(new Barrier(),new Barrier());
-            console.log(this.x, this.y)
             return true;
         }
     }
@@ -33,12 +31,3 @@ class Item {
         // square(this.x, this.y, this.width);
     }
 }
-
-// class PowerUp extends Item {
-//     constructor(powerUpImage){
-//         this.x = Math.floor(Math.random()*width);
-//         this.y = Math.floor(Math.random()*height);
-//         this.image = powerUpImage;
-//         super (this.height, this.width) 
-//     }
-// }
